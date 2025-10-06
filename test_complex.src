@@ -1,0 +1,46 @@
+// CST-405 Compiler - Complex Test Program
+// This program tests all features combined:
+//   - Variable declarations
+//   - Assignments
+//   - Arithmetic expressions
+//   - Print statements
+//   - While loops (NEW FEATURE)
+//   - Nested operations
+
+int a;
+int b;
+int c;
+int i;
+int result;
+
+// Initialize variables
+a = 3;
+b = 5;
+c = 0;
+
+// Calculate a * b using addition in a loop
+i = 0;
+result = 0;
+
+while (i < a) {
+    result = result + b;
+    i = i + 1;
+}
+
+print(result);
+
+// Test different relational operators
+int x;
+int y;
+
+x = 10;
+y = 0;
+
+// Count down
+while (x > y) {
+    print(x);
+    x = x + 0;
+    y = y + 1;
+}
+
+print(y);

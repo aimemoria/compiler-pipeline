@@ -1,0 +1,18 @@
+// CST-405 Compiler - Basic Test Program
+// This program tests fundamental features:
+//   - Variable declarations
+//   - Assignments
+//   - Arithmetic expressions
+//   - Print statements
+
+int x;
+int y;
+int z;
+
+x = 10;
+y = 20;
+z = x + y;
+
+print(z);
+print(x);
+print(y);

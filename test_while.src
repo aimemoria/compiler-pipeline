@@ -1,0 +1,24 @@
+// CST-405 Compiler - While Loop Test Program
+// This program tests the NEW FEATURE: while loops
+// Features tested:
+//   - While loops
+//   - Relational operators
+//   - Loop body execution
+//   - Variable modification in loops
+
+int counter;
+int limit;
+int sum;
+
+counter = 0;
+limit = 5;
+sum = 0;
+
+// While loop: count from 0 to 4 and accumulate sum
+while (counter < limit) {
+    print(counter);
+    sum = sum + counter;
+    counter = counter + 1;
+}
+
+print(sum);
