@@ -1,0 +1,72 @@
+====================================================================
+   CST-405 COMPILER - QUICK START GUIDE
+====================================================================
+
+YOUR EXACT COMMANDS FOR WSL/UBUNTU:
+--------------------------------------------------------------------
+
+Step 1: Navigate to project
+----------------------------
+cd /mnt/f/PROJECTS/CST\ 405/PROJECT/CST-405
+
+
+Step 2: Build the compiler
+----------------------------
+make -f Makefile_new clean
+make -f Makefile_new
+
+
+Step 3: Test with basic program
+----------------------------
+./compiler test_basic.src
+
+
+Step 4: Test with while loops (NEW FEATURE)
+----------------------------
+./compiler test_while.src
+
+
+Step 5: Assemble and run (Linux/WSL)
+----------------------------
+nasm -f elf64 output.asm -o output.o
+gcc output.o -o program -no-pie
+./program
+
+
+Step 6: Clean up
+----------------------------
+make -f Makefile_new clean
+
+
+====================================================================
+TROUBLESHOOTING
+====================================================================
+
+Problem: "unrecognized rule" errors
+Solution: Line ending issue - ALREADY FIXED!
+          Just run the commands above.
+
+Problem: "./compiler: No such file or directory"
+Solution: Build failed. Run:
+          make -f Makefile_new clean
+          make -f Makefile_new
+
+Problem: "Permission denied"
+Solution: chmod +x compiler
+
+====================================================================
+FOR VIDEO RECORDING
+====================================================================
+
+Follow VIDEO_SCRIPT.md and run these commands in order:
+
+1. ls -la                          # Show files
+2. cat test_while.src              # Show test program
+3. make -f Makefile_new            # Build
+4. ./compiler test_while.src       # Compile
+5. cat output.asm | head -n 40     # Show assembly
+6. nasm -f elf64 output.asm -o output.o
+7. gcc output.o -o program -no-pie
+8. ./program                       # Run and show output!
+
+====================================================================
