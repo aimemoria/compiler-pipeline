@@ -35,5 +35,3 @@ Translates TAC to x86-64 NASM assembly following System V AMD64 calling conventi
 
 ### Project Achievement
 Successfully implements all required compiler phases with comprehensive error handling, producing working executables from source code. Demonstrates mastery of compiler design principles and implementation techniques.
-
-*Word Count: 298*
