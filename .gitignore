@@ -1,0 +1,24 @@
+# Compiled files
+*.o
+*.exe
+compiler
+a.out
+
+# Generated files
+lex.yy.c
+parser.tab.c
+parser.tab.h
+parser.output
+output.asm
+output.o
+program
+
+# IDE files
+.vscode/
+.vs/
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
