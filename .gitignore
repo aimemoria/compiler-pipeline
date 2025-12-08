@@ -10,8 +10,21 @@ parser.tab.c
 parser.tab.h
 parser.output
 output.asm
+output_mips.asm
+output.ir
 output.o
 program
+
+# Temporary directories and archives
+bison-temp/
+*.zip
+
+# Backup files
+*.backup
+
+# Test output files
+simple_test.c
+quick_test.c
 
 # IDE files
 .vscode/
