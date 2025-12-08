@@ -29,9 +29,11 @@ quick_test.c
 # IDE files
 .vscode/
 .vs/
+.claude/
 *.swp
 *~
 
 # OS files
 .DS_Store
 Thumbs.db
+nul

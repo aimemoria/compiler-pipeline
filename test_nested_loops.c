@@ -8,8 +8,8 @@ int main() {
     sum = 0;
 
     // Nested for loop
-    for (i = 1; i <= 3; i = i + 1) {
-        for (j = 1; j <= 2; j = j + 1) {
+    for (i = 1; i <= 3; i = i + 1;) {
+        for (j = 1; j <= 2; j = j + 1;) {
             sum = sum + 1;
         }
     }

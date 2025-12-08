@@ -62,6 +62,18 @@ WS          [ \t]
 ","             { update_location(); yylval.str = strdup(yytext); return COMMA; }
 
 "//".*          { col_num += yyleng; char_count += yyleng; }
+"/*"([^*]|\*+[^*/])*\*+"/"  { 
+    int i;
+    for (i = 0; i < yyleng; i++) {
+        if (yytext[i] == '\n') {
+            line_num++;
+            col_num = 1;
+        } else {
+            col_num++;
+        }
+        char_count++;
+    }
+}
 
 {WS}+           { col_num += yyleng; char_count += yyleng; }
 \n              { line_num++; col_num = 1; char_count++; }
