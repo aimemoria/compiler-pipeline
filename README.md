@@ -1,9 +1,8 @@
-# CST-405 Complete C Compiler
+# C Compiler Pipeline
 
 A full-featured compiler for a C-like programming language with lexical analysis, parsing, semantic analysis, optimization, and code generation for both MIPS and x86-64 architectures.
 
 **Version**: 1.0  
-**Course**: CST-405 Compiler Design  
 **Status**: Production Ready
 
 ---
@@ -131,22 +130,22 @@ See **METRICS.md** for detailed metrics and benchmarks.
 ## Project Structure
 
 ```
-CST-405-PROJECTS/
-├── compiler.c              # Main driver
-├── scanner_new.l           # Lexer
-├── parser.y                # Parser
-├── ast.c/h                 # AST
-├── semantic.c/h            # Semantic analyzer
-├── ircode.c/h              # IR generator
-├── optimizer.c/h           # Optimizer
-├── codegen.c/h             # x86-64 generator
-├── codegen_mips.c/h        # MIPS generator
-├── diagnostics.c/h         # Diagnostics
-├── security.c/h            # Security analyzer
-├── symtable.c/h            # Symbol table
-├── build.ps1 / Makefile    # Build scripts
-├── test_*.c                # Test programs
-└── README.md               # This file
+compiler-pipeline/
+    compiler.c              # Main driver
+    scanner_new.l           # Lexer
+    parser.y                # Parser
+    ast.c/h                 # AST
+    semantic.c/h            # Semantic analyzer
+    ircode.c/h              # IR generator
+    optimizer.c/h           # Optimizer
+    codegen.c/h             # x86-64 generator
+    codegen_mips.c/h        # MIPS generator
+    diagnostics.c/h         # Diagnostics
+    security.c/h            # Security analyzer
+    symtable.c/h            # Symbol table
+    build.ps1 / Makefile    # Build scripts
+    test_*.c                # Test programs
+    README.md               # This file
 ```
 
 ---
